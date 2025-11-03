@@ -24,31 +24,87 @@ export const projects: Project[] = [
   {
     slug: 'modern-living-room',
     title: 'Contemporary Living Space',
-    location: 'Mumbai, India',
+    location: 'Udupi, India',
     year: 2025,
     services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
     description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221',
+        url: '/src/assets/living1.jpg',
         alt: 'Living room with panoramic city views',
         aspectRatio: 16/9
-      },
+      }
+    ],
+    hero: {
+      url: '/src/assets/living1.jpg',
+      alt: 'Modern living room main view',
+      blurDataUrl: ''
+    },
+    category: 'living-room',
+    pdfBrochure: '/assets/portfolio/modern-living-room/brochure.pdf'
+  },
+  {
+    slug: 'modern-living-room',
+    title: 'Contemporary Living Space',
+    location: 'Udupi, India',
+    year: 2025,
+    services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
+    description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
+    images: [
       {
-        url: 'https://images.unsplash.com/photo-1600210491369-e753d80a41f3',
+        url: '/src/assets/living2.jpg',
         alt: 'Custom entertainment center',
         aspectRatio: 4/3
-      },
+      }
+    ],
+    hero: {
+      url: '/src/assets/living2.jpg',
+      alt: 'Modern living room main view',
+      blurDataUrl: ''
+    },
+    category: 'living-room',
+    pdfBrochure: '/assets/portfolio/modern-living-room/brochure.pdf'
+  },
+  {
+    slug: 'modern-living-room',
+    title: 'Contemporary Living Space',
+    location: 'Udupi, India',
+    year: 2025,
+    services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
+    description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
+    images: [
       {
-        url: 'https://images.unsplash.com/photo-1632829882891-5047ccc421bc',
+        url: '/src/assets/living3.jpg',
         alt: 'Seating area with accent lighting',
+        aspectRatio: 3/2
+      },
+    ],
+    hero: {
+      url: '/src/assets/living3.jpg',
+      alt: 'Modern living room main view',
+      blurDataUrl: ''
+    },
+    category: 'living-room',
+    pdfBrochure: '/assets/portfolio/modern-living-room/brochure.pdf'
+  },
+  {
+    slug: 'modern-living-room',
+    title: 'Contemporary Living Space',
+    location: 'Udupi, India',
+    year: 2025,
+    services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
+    description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
+    images: [
+      {
+        url: '/src/assets/living4.jpg',
+        alt: 'Living room design details',
         aspectRatio: 3/2
       }
     ],
     hero: {
-      url: 'https://images.unsplash.com/photo-1600210491369-e753d80a41f3',
+      url: '/src/assets/living4.jpg',
       alt: 'Modern living room main view',
-      blurDataUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRg...' // TODO: Generate LQIP
+      blurDataUrl: ''
     },
     category: 'living-room',
     pdfBrochure: '/assets/portfolio/modern-living-room/brochure.pdf'
@@ -56,7 +112,7 @@ export const projects: Project[] = [
   {
     slug: 'luxury-kitchen',
     title: 'Smart Modular Kitchen',
-    location: 'Bangalore, India',
+    location: 'Udupi, India',
     year: 2024,
     services: ['Kitchen Design', 'Storage Solutions', 'Lighting Design'],
     description: 'A state-of-the-art modular kitchen featuring smart storage solutions, premium appliances, and ergonomic design. Perfect blend of functionality and aesthetic appeal.',
@@ -80,69 +136,101 @@ export const projects: Project[] = [
     hero: {
       url: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2',
       alt: 'Luxury modular kitchen',
-      blurDataUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRg...' // TODO: Generate LQIP
+      blurDataUrl: ''
     },
     category: 'modular-kitchen'
   },
   {
     slug: 'master-bedroom',
     title: 'Serene Master Suite',
-    location: 'Delhi, India',
+    location: 'Udupi, India',
     year: 2025,
     services: ['Bedroom Design', 'Custom Furniture', 'Lighting Design'],
-    description: 'A tranquil master bedroom that combines luxury with comfort. Features custom storage solutions, ambient lighting, and premium materials for a peaceful retreat.',
+    description: 'An elegant master bedroom designed to be your personal sanctuary. Featuring bespoke wooden paneling, soft ambient lighting, and a harmonious color palette that creates a tranquil atmosphere. Custom-built wardrobes offer ample storage while maintaining aesthetic appeal, and carefully selected furnishings ensure both comfort and sophistication.',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c',
-        alt: 'Master bedroom overview',
+        url: '/src/assets/bedroom.jpg',
+        alt: 'Master bedroom overview with elegant design',
         aspectRatio: 16/9
       },
       {
-        url: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0',
-        alt: 'Custom wardrobe design',
+        url: '/src/assets/bedroom2.jpg',
+        alt: 'Custom wardrobe and storage solutions',
         aspectRatio: 4/3
       },
       {
-        url: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf',
-        alt: 'Reading nook with custom lighting',
+        url: '/src/assets/bedroom3.jpg',
+        alt: 'Bedroom details with ambient lighting',
         aspectRatio: 3/2
       }
     ],
     hero: {
-      url: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c',
+      url: '/src/assets/bedroom.jpg',
       alt: 'Luxury master bedroom',
-      blurDataUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRg...' // TODO: Generate LQIP
+      blurDataUrl: ''
     },
     category: 'bedroom'
   },
   {
-    slug: 'minimalist-bedroom',
-    title: 'Minimalist Guest Room',
-    location: 'Pune, India',
-    year: 2024,
-    services: ['Interior Design', 'Space Optimization', 'Storage Solutions'],
-    description: 'A thoughtfully designed guest bedroom that maximizes space while maintaining style. Clean lines and smart storage solutions create a welcoming atmosphere.',
+    slug: 'master-bedroom',
+    title: 'Serene Master Suite',
+    location: 'Udupi, India',
+    year: 2025,
+    services: ['Bedroom Design', 'Custom Furniture', 'Lighting Design'],
+    description: 'An elegant master bedroom designed to be your personal sanctuary. Featuring bespoke wooden paneling, soft ambient lighting, and a harmonious color palette that creates a tranquil atmosphere. Custom-built wardrobes offer ample storage while maintaining aesthetic appeal, and carefully selected furnishings ensure both comfort and sophistication.',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1613977257363-707ba9348227',
-        alt: 'Minimalist bedroom design',
+        url: '/src/assets/bedroom.jpg',
+        alt: 'Master bedroom overview with elegant design',
         aspectRatio: 16/9
       },
       {
-        url: 'https://images.unsplash.com/photo-1600607688969-a5bfcd646154',
-        alt: 'Built-in storage solutions',
+        url: '/src/assets/bedroom2.jpg',
+        alt: 'Custom wardrobe and storage solutions',
         aspectRatio: 4/3
       },
       {
-        url: 'https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4',
-        alt: 'Work corner in bedroom',
+        url: '/src/assets/bedroom3.jpg',
+        alt: 'Bedroom details with ambient lighting',
         aspectRatio: 3/2
       }
     ],
     hero: {
-      url: 'https://images.unsplash.com/photo-1613977257363-707ba9348227',
-      alt: 'Minimalist bedroom view',
-      blurDataUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRg...' // TODO: Generate LQIP
+      url: '/src/assets/bedroom2.jpg',
+      alt: 'Luxury master bedroom',
+      blurDataUrl: ''
+    },
+    category: 'bedroom'
+  },
+  
+  {
+    slug: 'minimalist-bedroom',
+    title: 'Elegant Guest Bedroom',
+    location: 'Udupi, India',
+    year: 2024,
+    services: ['Interior Design', 'Space Optimization', 'Storage Solutions'],
+    description: 'A refined guest bedroom that perfectly balances warmth and sophistication. The design features premium materials, thoughtful space planning, and integrated storage solutions that maintain a clutter-free environment. Carefully curated lighting and textures create an inviting retreat for guests, while the neutral palette with rich wood accents adds timeless elegance.',
+    images: [
+      {
+        url: '/src/assets/bedroom2.jpg',
+        alt: 'Guest bedroom with elegant furnishings',
+        aspectRatio: 16/9
+      },
+      {
+        url: '/src/assets/bedroom3.jpg',
+        alt: 'Built-in storage and design details',
+        aspectRatio: 4/3
+      },
+      {
+        url: '/src/assets/bedroom.jpg',
+        alt: 'Bedroom styling and decor',
+        aspectRatio: 3/2
+      }
+    ],
+    hero: {
+      url: '/src/assets/bedroom3.jpg',
+      alt: 'Elegant guest bedroom view',
+      blurDataUrl: ''
     },
     category: 'bedroom'
   }
