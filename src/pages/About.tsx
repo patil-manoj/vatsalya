@@ -1,95 +1,49 @@
 import { motion } from 'framer-motion';
-import { fadeUp, stagger, timelineNode } from '../lib/animations';
+import { fadeUp, stagger } from '../lib/animations';
 import LazyImage from '../components/LazyImage';
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
-
 import SEO from '../components/SEO';
 import ContactStrip from '../components/ContactStrip';
 
-const TIMELINE_ITEMS = [
+const VALUES = [
   {
-    year: 2020,
-    title: 'Studio Founded',
-    description: 'Established in Mumbai with a vision to create thoughtful, innovative spaces.',
+    title: 'Innovation',
+    description: 'Pushing boundaries with cutting-edge design solutions that blend technology with artistry.',
   },
   {
-    year: 2022,
-    title: 'Notable Recognition',
-    description: 'Received the Young Architect of the Year award for the Skyline Penthouse project.',
+    title: 'Precision',
+    description: 'Meticulous attention to every detail, ensuring flawless execution from concept to completion.',
   },
   {
-    year: 2023,
-    title: 'Expansion',
-    description: 'Opened our second studio in Bangalore, expanding our presence in South India.',
-  },
-];
-
-const TEAM_MEMBERS = [
-  {
-    name: 'Priya Sharma',
-    role: 'Principal Architect',
-    bio: 'With over 15 years of experience, Priya leads our design direction with a focus on sustainable luxury.',
-    image: '/assets/team/priya.jpg',
-    social: {
-      linkedin: '#',
-      instagram: '#',
-    },
+    title: 'Client-Centric',
+    description: 'Your vision guides our process. We listen, understand, and deliver beyond expectations.',
   },
   {
-    name: 'Rahul Patel',
-    role: 'Senior Interior Designer',
-    bio: 'Rahul brings a unique perspective to spatial design, blending functionality with artistic expression.',
-    image: '/assets/team/rahul.jpg',
-    social: {
-      linkedin: '#',
-      instagram: '#',
-    },
-  },
-  {
-    name: 'Aisha Khan',
-    role: 'Project Manager',
-    bio: 'Aisha ensures seamless execution of projects through meticulous planning and coordination.',
-    image: '/assets/team/aisha.jpg',
-    social: {
-      linkedin: '#',
-    },
+    title: 'Excellence',
+    description: 'Uncompromising commitment to quality in materials, craftsmanship, and service.',
   },
 ];
 
 const PROCESS_STEPS = [
   {
+    number: '01',
     title: 'Discovery',
-    description: 'Understanding your vision, requirements, and constraints through detailed consultation.',
+    description: 'Understanding your vision, lifestyle, and aspirations through detailed consultation and site analysis.',
   },
   {
-    title: 'Concept',
-    description: 'Developing initial design concepts and spatial strategies aligned with your goals.',
+    number: '02',
+    title: 'Concept Development',
+    description: 'Creating bespoke design concepts with mood boards, 3D visualizations, and material palettes.',
   },
   {
-    title: 'Development',
-    description: 'Refining designs through iterative feedback and detailed technical documentation.',
+    number: '03',
+    title: 'Design Refinement',
+    description: 'Iterative feedback process to perfect every detail, from layouts to finishes.',
   },
   {
-    title: 'Delivery',
-    description: 'Coordinating with contractors and vendors to bring the vision to life.',
-  },
-];
-
-const ACCOLADES = [
-  {
-    name: 'Design Excellence Award',
-    logo: '/assets/accolades/award1.png',
-    url: '#',
-  },
-  {
-    name: 'Sustainability Innovation',
-    logo: '/assets/accolades/award2.png',
-    url: '#',
-  },
-  {
-    name: 'Featured in Architectural Digest',
-    logo: '/assets/accolades/ad.png',
-    url: '#',
+    number: '04',
+    title: 'Execution',
+    description: 'Expert project management ensuring timely delivery with uncompromising quality standards.',
   },
 ];
 
@@ -100,237 +54,344 @@ export default function About() {
     <>
       <SEO 
         title="About Us"
-        description="Learn about our studio's journey, meet our team, and discover our design process."
+        description="Learn about Vatsalya Home Interiors, our founder Reshma Prabhakar, and our commitment to excellence in interior design."
       />
 
-      <main>
-        {/* Hero with Manifesto */}
-        <section className="min-h-screen flex items-center py-24">
-          <div className="container mx-auto px-6">
+      <main className="overflow-hidden">
+        {/* Hero Section */}
+        <section className="relative h-screen">
+          <div className="absolute inset-0">
+            <LazyImage
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
+              alt="Luxury interior design"
+              className="w-full h-full object-cover"
+              aspectRatio="aspect-[16/9]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+          </div>
+          
+          <div className="relative h-full flex items-center justify-center text-white text-center">
             <motion.div
-              className="max-w-4xl mx-auto text-center"
-              initial={prefersReducedMotion ? "visible" : "hidden"}
-              animate="visible"
-              variants={fadeUp}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="max-w-4xl px-6"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-8">
-                We create spaces that inspire, elevate, and endure.
+              <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">ABOUT US</span>
+              <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-8">
+                Crafting Spaces That Inspire
               </h1>
-              
-              <p className="text-xl md:text-2xl text-neutral-600 mb-12">
-                Our studio is founded on the belief that thoughtful design has the power to transform how we live, work, and interact with our environment.
+              <p className="text-lg md:text-xl font-light opacity-90 max-w-2xl mx-auto">
+                Transforming visions into reality through thoughtful design, innovation, and precision.
               </p>
-
-              <blockquote className="text-2xl md:text-3xl italic mb-8">
-                "Architecture is not about space but about time."
-              </blockquote>
             </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2 }}
+            className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+          >
+            <div className="flex flex-col items-center space-y-3">
+              <span className="font-body text-xs tracking-[0.2em] text-white">DISCOVER OUR STORY</span>
+              <motion.div
+                animate={{
+                  y: [0, 12, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  ease: 'easeInOut',
+                }}
+                className="w-[1px] h-16 bg-gradient-to-b from-white to-transparent"
+              />
+            </div>
+          </motion.div>
         </section>
 
-        {/* Timeline */}
-        <section className="py-24 bg-neutral-100">
+        {/* Founder Section - Prominent Feature */}
+        <section className="py-32 bg-white">
           <div className="container mx-auto px-6">
-            <motion.h2
-              className="text-3xl md:text-4xl text-center mb-16"
-              initial={prefersReducedMotion ? "visible" : "hidden"}
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-            >
-              Our Journey
-            </motion.h2>
+            <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+              <motion.div
+                initial={prefersReducedMotion ? "visible" : "hidden"}
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="order-2 lg:order-1"
+              >
+                <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">LEADERSHIP</span>
+                <h2 className="font-heading text-4xl md:text-5xl font-light mb-6">
+                  Reshma Prabhakar
+                </h2>
+                <p className="text-xl text-brand-primary mb-8 font-light italic">
+                  Chairman & Founder, Vatsalya Home Interiors
+                </p>
+                
+                <div className="space-y-6 text-brand-stone-600 leading-relaxed">
+                  <p>
+                    Reshma Prabhakar is the visionary Chairman and Founder of Vatsalya Home Interiors, 
+                    a company dedicated to transforming spaces through thoughtful design, innovation, and precision. 
+                    With an educational foundation in Business Administration (MBA) and extensive experience in the 
+                    corporate sector, Reshma brings a unique blend of strategic insight and creative direction to the 
+                    interior design industry.
+                  </p>
+                  
+                  <p>
+                    Her journey from the corporate world to entrepreneurship stems from a deep passion for creating 
+                    beautiful, functional, and cost-effective spaces. Under her leadership, Vatsalya Home Interiors 
+                    has built a reputation for delivering high-quality, customized interior solutions that align with 
+                    each client's needs, style, and budget — all while ensuring timely project completion and 
+                    exceptional service standards.
+                  </p>
+                  
+                  <p>
+                    Reshma believes that great design should be both affordable and impactful, and her approach 
+                    reflects a commitment to client satisfaction, attention to detail, and continuous innovation.
+                  </p>
+                </div>
 
-            <div className="max-w-3xl mx-auto">
-              {TIMELINE_ITEMS.map((item) => (
-                <motion.div
-                  key={item.year}
-                  className="relative pl-8 pb-16 last:pb-0"
-                  initial={prefersReducedMotion ? "visible" : "hidden"}
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  variants={fadeUp}
-                >
-                  {/* Timeline line */}
-                  <motion.div
-                    className="absolute left-0 top-0 h-full w-px bg-black"
-                    variants={timelineNode}
-                    initial={prefersReducedMotion ? "visible" : "hidden"}
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                  />
+                <div className="mt-12 p-8 bg-brand-stone-50 border-l-4 border-brand-primary">
+                  <p className="text-2xl md:text-3xl font-light italic text-brand-stone-800 leading-relaxed">
+                    "To set new standards in the interior solutions industry by blending creativity, 
+                    technology, and precision."
+                  </p>
+                  <p className="mt-4 text-sm tracking-[0.2em] text-brand-stone-500">COMPANY VISION</p>
+                </div>
 
-                  {/* Timeline node */}
-                  <div className="absolute left-0 top-0 w-2 h-2 bg-black rounded-full -translate-x-[3px]" />
+                <p className="mt-8 text-brand-stone-600 leading-relaxed">
+                  She continues to lead Vatsalya Home Interiors with integrity, passion, and an unwavering 
+                  dedication to excellence.
+                </p>
+              </motion.div>
 
-                  <div>
-                    <span className="text-sm uppercase tracking-wider text-neutral-500">
-                      {item.year}
-                    </span>
-                    <h3 className="text-xl mb-2">{item.title}</h3>
-                    <p className="text-neutral-600">{item.description}</p>
+              <motion.div
+                initial={prefersReducedMotion ? "visible" : "hidden"}
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="order-1 lg:order-2"
+              >
+                <div className="relative">
+                  <div className="absolute -inset-6 border border-brand-primary/20 hidden lg:block" />
+                  <div className="relative">
+                    <LazyImage
+                      src="/src/assets/founder.png"
+                      alt="Reshma Prabhakar - Chairman & Founder of Vatsalya Home Interiors"
+                      className="w-full shadow-2xl"
+                      aspectRatio="aspect-[3/4]"
+                    />
                   </div>
-                </motion.div>
-              ))}
+                  
+                  {/* Decorative Element */}
+                  <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-brand-primary/10 -z-10 hidden lg:block" />
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Team Grid */}
-        <section className="py-24">
+        {/* Company Mission & Vision */}
+        <section className="py-32 bg-brand-stone-50">
           <div className="container mx-auto px-6">
-            <motion.h2
-              className="text-3xl md:text-4xl text-center mb-16"
+            <motion.div
               initial={prefersReducedMotion ? "visible" : "hidden"}
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
+              className="text-center mb-16"
             >
-              Our Team
-            </motion.h2>
+              <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">OUR PHILOSOPHY</span>
+              <h2 className="font-heading text-4xl md:text-5xl font-light mb-8">
+                Excellence in Every Detail
+              </h2>
+              <p className="text-xl text-brand-stone-600 max-w-3xl mx-auto leading-relaxed">
+                At Vatsalya Home Interiors, we believe that exceptional design is born from the perfect 
+                harmony of aesthetics, functionality, and craftsmanship.
+              </p>
+            </motion.div>
 
             <motion.div
-              className="grid md:grid-cols-3 gap-8"
+              className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
               initial={prefersReducedMotion ? "visible" : "hidden"}
               whileInView="visible"
               viewport={{ once: true }}
               variants={stagger}
             >
-              {TEAM_MEMBERS.map((member) => (
+              {VALUES.map((value, index) => (
                 <motion.div
-                  key={member.name}
-                  className="group"
+                  key={value.title}
                   variants={fadeUp}
-                  whileHover={{ y: -5 }}
+                  className="bg-white p-8 hover:shadow-lg transition-shadow duration-300"
                 >
-                  <div className="relative aspect-[3/4] mb-4 overflow-hidden">
-                    <LazyImage
-                      src={`${member.image}?format=webp`}
-                      alt={`Portrait of ${member.name}`}
-                      className="w-full h-full"
-                      aspectRatio="aspect-[3/4]"
-                    />
-
-                    {/* Social links overlay */}
-                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                      {member.social.linkedin && (
-                        <a
-                          href={member.social.linkedin}
-                          className="text-white hover:text-yellow-400 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`${member.name}'s LinkedIn profile`}
-                        >
-                          LinkedIn
-                        </a>
-                      )}
-                      {member.social.instagram && (
-                        <a
-                          href={member.social.instagram}
-                          className="text-white hover:text-yellow-400 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`${member.name}'s Instagram profile`}
-                        >
-                          Instagram
-                        </a>
-                      )}
-                    </div>
+                  <div className="text-5xl font-light text-brand-primary/20 mb-4">
+                    {String(index + 1).padStart(2, '0')}
                   </div>
-
-                  <h3 className="text-xl mb-1">{member.name}</h3>
-                  <p className="text-neutral-600 mb-2">{member.role}</p>
-                  <p className="text-sm">{member.bio}</p>
+                  <h3 className="font-heading text-2xl mb-4">{value.title}</h3>
+                  <p className="text-brand-stone-600 leading-relaxed">{value.description}</p>
                 </motion.div>
               ))}
             </motion.div>
           </div>
         </section>
 
-        {/* Process Steps */}
-        <section className="py-24 bg-neutral-100">
+        {/* Design Process */}
+        <section className="py-32 bg-white">
           <div className="container mx-auto px-6">
-            <motion.h2
-              className="text-3xl md:text-4xl text-center mb-16"
+            <motion.div
               initial={prefersReducedMotion ? "visible" : "hidden"}
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
+              className="text-center mb-16"
             >
-              Our Process
-            </motion.h2>
+              <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">OUR APPROACH</span>
+              <h2 className="font-heading text-4xl md:text-5xl font-light mb-8">
+                A Seamless Journey to Excellence
+              </h2>
+              <p className="text-xl text-brand-stone-600 max-w-3xl mx-auto leading-relaxed">
+                From initial consultation to final reveal, we guide you through every step with expertise and care.
+              </p>
+            </motion.div>
 
-            <div className="grid md:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto relative">
+              {/* Connection Line */}
+              <div className="hidden lg:block absolute top-16 left-0 right-0 h-px bg-brand-stone-200 -z-10">
+                <motion.div
+                  className="h-full bg-brand-primary"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: '100%' }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 2, delay: 0.5 }}
+                />
+              </div>
+
               {PROCESS_STEPS.map((step, index) => (
                 <motion.div
                   key={step.title}
-                  className="group relative"
                   initial={prefersReducedMotion ? "visible" : "hidden"}
                   whileInView="visible"
                   viewport={{ once: true }}
                   variants={fadeUp}
                   custom={index}
+                  className="relative text-center group"
                 >
-                  <div className="text-6xl font-light text-neutral-200 mb-4">
-                    {index + 1}
+                  <div className="relative inline-flex items-center justify-center w-32 h-32 mb-6">
+                    <div className="absolute inset-0 bg-brand-primary/5 rounded-full group-hover:bg-brand-primary/10 transition-colors duration-300" />
+                    <span className="text-5xl font-light text-brand-primary relative z-10">
+                      {step.number}
+                    </span>
                   </div>
-                  <h3 className="text-xl mb-2">{step.title}</h3>
-                  <p className="text-neutral-600">{step.description}</p>
-
-                  {index < PROCESS_STEPS.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-px bg-neutral-300 -z-10">
-                      <motion.div
-                        className="h-full bg-yellow-400"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: '100%' }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: index * 0.3 }}
-                      />
-                    </div>
-                  )}
+                  <h3 className="font-heading text-2xl mb-4">{step.title}</h3>
+                  <p className="text-brand-stone-600 leading-relaxed">{step.description}</p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Awards & Press */}
-        <section className="py-24">
-          <div className="container mx-auto px-6">
-            <motion.h2
-              className="text-3xl md:text-4xl text-center mb-16"
+        {/* Commitment to Quality */}
+        <section className="relative py-32">
+          <div className="absolute inset-0">
+            <LazyImage
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
+              alt="Luxury interior craftsmanship"
+              className="w-full h-full object-cover"
+              aspectRatio="aspect-[21/9]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
+          </div>
+
+          <div className="relative container mx-auto px-6">
+            <motion.div
               initial={prefersReducedMotion ? "visible" : "hidden"}
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
+              className="max-w-2xl text-white"
             >
-              Awards & Recognition
-            </motion.h2>
+              <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">OUR COMMITMENT</span>
+              <h2 className="font-heading text-4xl md:text-5xl font-light mb-8">
+                Quality Without Compromise
+              </h2>
+              <p className="text-lg leading-relaxed mb-8 opacity-90">
+                Every project we undertake is a testament to our dedication to excellence. We source the finest 
+                materials, collaborate with skilled craftspeople, and employ cutting-edge technology to ensure 
+                that your space not only meets but exceeds expectations.
+              </p>
+              <ul className="space-y-4 text-lg">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-4 mt-2 flex-shrink-0"></span>
+                  <span>Timely project completion with meticulous planning</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-4 mt-2 flex-shrink-0"></span>
+                  <span>Premium materials and sustainable design practices</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-4 mt-2 flex-shrink-0"></span>
+                  <span>Budget-conscious solutions without sacrificing quality</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-brand-primary rounded-full mr-4 mt-2 flex-shrink-0"></span>
+                  <span>Personalized service and ongoing support</span>
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="py-32 bg-brand-stone-50">
+          <div className="container mx-auto px-6">
+            <motion.div
+              initial={prefersReducedMotion ? "visible" : "hidden"}
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeUp}
+              className="text-center mb-16"
+            >
+              <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">WHY VATSALYA</span>
+              <h2 className="font-heading text-4xl md:text-5xl font-light mb-8">
+                The Vatsalya Difference
+              </h2>
+            </motion.div>
 
             <motion.div
-              className="flex flex-wrap justify-center gap-12"
+              className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto"
               initial={prefersReducedMotion ? "visible" : "hidden"}
               whileInView="visible"
               viewport={{ once: true }}
               variants={stagger}
             >
-              {ACCOLADES.map((accolade) => (
-                <motion.a
-                  key={accolade.name}
-                  href={accolade.url}
-                  className="block w-40 opacity-50 hover:opacity-100 transition-opacity"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {[
+                {
+                  title: 'Tailored Solutions',
+                  description: 'Every client is unique, and so is every project. We create customized designs that reflect your personality, lifestyle, and aspirations.',
+                  icon: '✦'
+                },
+                {
+                  title: 'End-to-End Service',
+                  description: 'From concept to completion, we manage every aspect of your project, ensuring a seamless and stress-free experience.',
+                  icon: '◆'
+                },
+                {
+                  title: 'Proven Excellence',
+                  description: 'With a portfolio of successful projects and satisfied clients, we bring experience and expertise to every engagement.',
+                  icon: '●'
+                }
+              ].map((item, index) => (
+                <motion.div
+                  key={item.title}
                   variants={fadeUp}
-                  whileHover={{ scale: 1.05 }}
+                  className="bg-white p-10 text-center hover:shadow-xl transition-shadow duration-300"
                 >
-                  <LazyImage
-                    src={accolade.logo}
-                    alt={accolade.name}
-                    className="w-full"
-                    aspectRatio="aspect-[3/2]"
-                  />
-                </motion.a>
+                  <div className="text-5xl text-brand-primary mb-6">{item.icon}</div>
+                  <h3 className="font-heading text-2xl mb-4">{item.title}</h3>
+                  <p className="text-brand-stone-600 leading-relaxed">{item.description}</p>
+                </motion.div>
               ))}
             </motion.div>
           </div>
