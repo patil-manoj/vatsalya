@@ -193,8 +193,70 @@ export default function About() {
           </div>
         </section>
 
-        {/* Company Mission & Vision */}
+        {/* Director Section */}
         <section className="py-32 bg-brand-stone-50">
+          <div className="container mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+              <motion.div
+                initial={prefersReducedMotion ? "visible" : "hidden"}
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="order-1 lg:order-1"
+              >
+                <div className="relative">
+                  <div className="absolute -inset-6 border border-brand-primary/20 hidden lg:block" />
+                  <div className="relative">
+                    <LazyImage
+                      src="/src/assets/director.jpg"
+                      alt="Ranjith Kumar Kallianpur - Director of Vatsalya Home Interiors"
+                      className="w-full shadow-2xl"
+                      aspectRatio="aspect-[3/4]"
+                    />
+                  </div>
+                  
+                  {/* Decorative Element */}
+                  <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-brand-primary/10 -z-10 hidden lg:block" />
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={prefersReducedMotion ? "visible" : "hidden"}
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="order-2 lg:order-2"
+              >
+                <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">LEADERSHIP</span>
+                <h2 className="font-heading text-4xl md:text-5xl font-light mb-6">
+                  Ranjith Kumar Kallianpur
+                </h2>
+                <p className="text-xl text-brand-primary mb-8 font-light italic">
+                  Director
+                </p>
+                
+                <div className="space-y-6 text-brand-stone-600 leading-relaxed">
+                  <p>
+                    Ranjith Kumar Kallianpur brings extensive international experience in the printing industry, 
+                    having worked abroad for several years before returning to India to establish and grow the company. 
+                    His vision is rooted in delivering exceptional customer satisfaction through transparency, quality, 
+                    and innovation.
+                  </p>
+                  
+                  <p>
+                    As Director, Ranjith emphasizes open communication and a hands-on approach, frequently visiting 
+                    different locations to gain insights and collaborate with his team. His leadership style encourages 
+                    creativity and teamwork, ensuring that every project meets the highest standards of excellence and 
+                    integrity.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Company Mission & Vision */}
+        <section className="py-32 bg-white">
           <div className="container mx-auto px-6">
             <motion.div
               initial={prefersReducedMotion ? "visible" : "hidden"}
