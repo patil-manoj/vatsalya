@@ -178,7 +178,7 @@ export default function About() {
                   <div className="absolute -inset-6 border border-brand-primary/20 hidden lg:block" />
                   <div className="relative">
                     <LazyImage
-                      src="/src/assets/founder.png"
+                      src="/founder.png"
                       alt="Reshma Prabhakar - Chairman & Founder of Vatsalya Home Interiors"
                       className="w-full shadow-2xl"
                       aspectRatio="aspect-[3/4]"
@@ -208,7 +208,7 @@ export default function About() {
                   <div className="absolute -inset-6 border border-brand-primary/20 hidden lg:block" />
                   <div className="relative">
                     <LazyImage
-                      src="/src/assets/director.jpg"
+                      src="/director.jpg"
                       alt="Ranjith Kumar Kallianpur - Director of Vatsalya Home Interiors"
                       className="w-full shadow-2xl"
                       aspectRatio="aspect-[3/4]"
@@ -444,7 +444,7 @@ export default function About() {
                   description: 'With a portfolio of successful projects and satisfied clients, we bring experience and expertise to every engagement.',
                   icon: '●'
                 }
-              ].map((item, index) => (
+              ].map((item) => (
                 <motion.div
                   key={item.title}
                   variants={fadeUp}

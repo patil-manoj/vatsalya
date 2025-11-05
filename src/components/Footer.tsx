@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo from '../assets/logo.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,7 +11,7 @@ export default function Footer() {
           {/* Logo and description */}
           <div className="md:col-span-2">
             <Link to="/" className="inline-block" aria-label="Vatsalya - Home">
-              <img src={logo} alt="Vatsalya Logo" className="h-12 w-12" />
+              <img src="/logo.png" alt="Vatsalya Logo" className="h-12 w-12" />
             </Link>
             <p className="font-body text-brand-stone-300 mt-6 max-w-md">
               Crafting timeless spaces that blend luxury with functionality. 
@@ -49,8 +48,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+919632076549" className="hover:text-white transition-colors">
-                  +91 96320 76549
+                <a href="tel:+917411334243" className="hover:text-white transition-colors">
+                  +91 74113 34243
                 </a>
               </li>
               <li>

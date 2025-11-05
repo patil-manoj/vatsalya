@@ -24,7 +24,7 @@ export const projects: Project[] = [
     services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
     description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
     hero: {
-      url: '/src/assets/living1.jpg',
+      url: '/living1.jpg',
       alt: 'Modern living room main view',
       blurDataUrl: ''
     },
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
     description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
     hero: {
-      url: '/src/assets/living2.jpg',
+      url: '/living2.jpg',
       alt: 'Modern living room main view',
       blurDataUrl: ''
     },
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
     description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
     hero: {
-      url: '/src/assets/living3.jpg',
+      url: '/living3.jpg',
       alt: 'Modern living room main view',
       blurDataUrl: ''
     },
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     services: ['Interior Design', 'Space Planning', 'Custom Furniture'],
     description: 'A luxurious living room design that combines modern aesthetics with comfort. Floor-to-ceiling windows frame panoramic city views while custom details accent rich wooden surfaces.',
     hero: {
-      url: '/src/assets/living4.jpg',
+      url: '/living4.jpg',
       alt: 'Modern living room main view',
       blurDataUrl: ''
     },
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     services: ['Bedroom Design', 'Custom Furniture', 'Lighting Design'],
     description: 'An elegant master bedroom designed to be your personal sanctuary. Featuring bespoke wooden paneling, soft ambient lighting, and a harmonious color palette that creates a tranquil atmosphere. Custom-built wardrobes offer ample storage while maintaining aesthetic appeal, and carefully selected furnishings ensure both comfort and sophistication.',
     hero: {
-      url: '/src/assets/bedroom.jpg',
+      url: '/bedroom.jpg',
       alt: 'Luxury master bedroom',
       blurDataUrl: ''
     },
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     services: ['Bedroom Design', 'Custom Furniture', 'Lighting Design'],
     description: 'An elegant master bedroom designed to be your personal sanctuary. Featuring bespoke wooden paneling, soft ambient lighting, and a harmonious color palette that creates a tranquil atmosphere. Custom-built wardrobes offer ample storage while maintaining aesthetic appeal, and carefully selected furnishings ensure both comfort and sophistication.',
     hero: {
-      url: '/src/assets/bedroom2.jpg',
+      url: '/bedroom2.jpg',
       alt: 'Luxury master bedroom',
       blurDataUrl: ''
     },
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     services: ['Interior Design', 'Space Optimization', 'Storage Solutions'],
     description: 'A refined guest bedroom that perfectly balances warmth and sophistication. The design features premium materials, thoughtful space planning, and integrated storage solutions that maintain a clutter-free environment. Carefully curated lighting and textures create an inviting retreat for guests, while the neutral palette with rich wood accents adds timeless elegance.',
     hero: {
-      url: '/src/assets/bedroom3.jpg',
+      url: '/bedroom3.jpg',
       alt: 'Elegant guest bedroom view',
       blurDataUrl: ''
     },
