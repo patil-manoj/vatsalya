@@ -51,33 +51,3 @@ export const heroMask: Variants = {
     },
   },
 };
-
-export const timelineNode: Variants = {
-  hidden: {
-    pathLength: 0,
-    opacity: 0,
-  },
-  visible: {
-    pathLength: 1,
-    opacity: 1,
-    transition: {
-      pathLength: { duration: 0.8, ease: 'easeInOut' },
-      opacity: { duration: 0.2 },
-    },
-  },
-};
-
-export const navVariants: Variants = {
-  hidden: {
-    y: -100,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-      ease: [0.6, 0.01, -0.05, 0.95],
-    },
-  },
-};
