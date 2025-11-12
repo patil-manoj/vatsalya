@@ -78,10 +78,10 @@ export default function Footer() {
           <div className="mt-4 md:mt-0">
             <ul className="flex justify-center md:justify-end space-x-6 text-brand-stone-400">
               <li>
-                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
               </li>
             </ul>
           </div>

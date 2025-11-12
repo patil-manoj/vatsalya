@@ -5,17 +5,21 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import WhatsAppButton from './components/WhatsAppButton';
+import ScrollToTop from './components/ScrollToTop';
 
 // Lazy load other pages
 const Portfolio = lazy(() => import('./pages/Portfolio'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Services = lazy(() => import('./pages/Services'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const Terms = lazy(() => import('./pages/Terms'));
 
 export default function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <Navigation />
 
         <main>
@@ -50,6 +54,22 @@ export default function App() {
               element={
                 <Suspense fallback={<div>Loading...</div>}>
                   <Contact />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/privacy-policy"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <PrivacyPolicy />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/terms"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Terms />
                 </Suspense>
               }
             />
