@@ -284,17 +284,17 @@ export default function Home() {
                   quote: "Vatsalya transformed our home into something beyond our imagination. Their attention to detail and understanding of our needs was exceptional.",
                   author: "Priya Mehta",
                   title: "Residential Client",
-                  project: "Mumbai Penthouse"
+                  project: "Udupi Penthouse"
                 },
                 {
                   quote: "Working with the team was a seamless experience. They brought innovation and practicality together in our office design, creating a space that inspires creativity.",
                   author: "Rajesh Kumar",
-                  title: "CEO",
-                  project: "Tech Startup Headquarters"
+                  title: "Residential Client",
+                  project: "Kundapura"
                 },
                 {
                   quote: "The level of craftsmanship and dedication to excellence is unmatched. Every corner of our restaurant reflects their thoughtful design approach.",
-                  author: "Sarah Williams",
+                  author: "Nitin Shah",
                   title: "Restaurant Owner",
                   project: "Fine Dining Experience"
                 }
