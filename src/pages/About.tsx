@@ -255,6 +255,82 @@ export default function About() {
           </div>
         </section>
 
+        {/* Chief Architect Section */}
+        <section className="py-32 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+              <motion.div
+                initial={prefersReducedMotion ? "visible" : "hidden"}
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="order-2 lg:order-1"
+              >
+                <span className="font-body text-sm tracking-[0.2em] text-brand-primary mb-6 block">DESIGN LEADERSHIP</span>
+                <h2 className="font-heading text-4xl md:text-5xl font-light mb-6">
+                  Sowmya Bekal
+                </h2>
+                <p className="text-xl text-brand-primary mb-8 font-light italic">
+                  Chief Architect & Interior Designer
+                </p>
+                
+                <div className="space-y-6 text-brand-stone-600 leading-relaxed">
+                  <p>
+                    Sowmya Bekal is an accomplished Architect and Interior Designer with extensive experience in 
+                    designing and executing diverse projects across Bangalore and Mangalore. Her portfolio includes 
+                    commercial buildings, educational institutions, residential apartments, and aerospace facilities 
+                    for some of the city's most prestigious builders.
+                  </p>
+                  
+                  <p>
+                    With a keen eye for detail and a passion for innovative, functional design, Sowmya strives to 
+                    create unique spaces that maximize utility and aesthetic appeal. Her approach focuses on delivering 
+                    projects that not only meet but exceed client expectations.
+                  </p>
+                  
+                  <p>
+                    In addition to her design expertise, Sowmya is well-versed in legal documentation, building 
+                    approvals, and regulatory compliance—ensuring that every project adheres to local laws and standards.
+                  </p>
+                  
+                  <p>
+                    Her proficiency in 2D and 3D design visualization allows clients to clearly envision their spaces 
+                    before execution, ensuring precision and satisfaction at every stage.
+                  </p>
+                  
+                  <p>
+                    Sowmya's dedication to excellence and her creative vision make her a trusted leader in architecture 
+                    and interior design.
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={prefersReducedMotion ? "visible" : "hidden"}
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="order-1 lg:order-2"
+              >
+                <div className="relative">
+                  <div className="absolute -inset-6 border border-brand-primary/20 hidden lg:block" />
+                  <div className="relative">
+                    <LazyImage
+                      src="/Architect.jpg"
+                      alt="Sowmya Bekal - Chief Architect & Interior Designer at Vatsalya Home Interiors"
+                      className="w-full shadow-2xl"
+                      aspectRatio="aspect-[3/4]"
+                    />
+                  </div>
+                  
+                  {/* Decorative Element */}
+                  <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-brand-primary/10 -z-10 hidden lg:block" />
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         {/* Company Mission & Vision */}
         <section className="py-32 bg-white">
           <div className="container mx-auto px-6">
