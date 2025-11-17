@@ -28,17 +28,17 @@ export default function ContactStrip({ dark = false, className = '' }: ContactSt
           
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <a
-              href="mailto:studio@vatsalya.com"
+              href="mailto:vatsalyahomeinteriors@gmail.com"
               className="text-lg hover:opacity-80 transition-opacity"
             >
-              studio@vatsalya.com
+              vatsalyahomeinteriors@gmail.com
             </a>
             <span className="hidden sm:inline opacity-50">|</span>
             <a
-              href="tel:+919632076549"
+              href="tel:+917411334243"
               className="text-lg hover:opacity-80 transition-opacity"
             >
-              +91 96320 76549
+              +91 74113 34243
             </a>
           </div>
 

@@ -77,14 +77,42 @@ export const projects: Project[] = [
     pdfBrochure: '/assets/portfolio/modern-living-room/brochure.pdf'
   },
   {
-    slug: 'luxury-kitchen',
+    slug: 'luxury-kitchen-1',
     title: 'Smart Modular Kitchen',
     location: 'Udupi, India',
     year: 2024,
     services: ['Kitchen Design', 'Storage Solutions', 'Lighting Design'],
     description: 'A state-of-the-art modular kitchen featuring smart storage solutions, premium appliances, and ergonomic design. Perfect blend of functionality and aesthetic appeal.',
     hero: {
-      url: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2',
+      url: '/kitchen1.jpg',
+      alt: 'Luxury modular kitchen',
+      blurDataUrl: ''
+    },
+    category: 'modular-kitchen'
+  },
+  {
+    slug: 'luxury-kitchen-2',
+    title: 'Smart Modular Kitchen',
+    location: 'Udupi, India',
+    year: 2024,
+    services: ['Kitchen Design', 'Storage Solutions', 'Lighting Design'],
+    description: 'A state-of-the-art modular kitchen featuring smart storage solutions, premium appliances, and ergonomic design. Perfect blend of functionality and aesthetic appeal.',
+    hero: {
+      url: '/kitchen2.jpg',
+      alt: 'Luxury modular kitchen',
+      blurDataUrl: ''
+    },
+    category: 'modular-kitchen'
+  },
+  {
+    slug: 'luxury-kitchen-3',
+    title: 'Smart Modular Kitchen',
+    location: 'Udupi, India',
+    year: 2024,
+    services: ['Kitchen Design', 'Storage Solutions', 'Lighting Design'],
+    description: 'A state-of-the-art modular kitchen featuring smart storage solutions, premium appliances, and ergonomic design. Perfect blend of functionality and aesthetic appeal.',
+    hero: {
+      url: '/kitchen3.jpg',
       alt: 'Luxury modular kitchen',
       blurDataUrl: ''
     },
@@ -119,7 +147,7 @@ export const projects: Project[] = [
     category: 'bedroom'
   },
   {
-    slug: 'minimalist-bedroom',
+    slug: 'minimalist-bedroom-1',
     title: 'Elegant Guest Bedroom',
     location: 'Udupi, India',
     year: 2024,
@@ -127,6 +155,48 @@ export const projects: Project[] = [
     description: 'A refined guest bedroom that perfectly balances warmth and sophistication. The design features premium materials, thoughtful space planning, and integrated storage solutions that maintain a clutter-free environment. Carefully curated lighting and textures create an inviting retreat for guests, while the neutral palette with rich wood accents adds timeless elegance.',
     hero: {
       url: '/bedroom3.jpg',
+      alt: 'Elegant guest bedroom view',
+      blurDataUrl: ''
+    },
+    category: 'bedroom'
+  },
+  {
+    slug: 'minimalist-bedroom-2',
+    title: 'Elegant Guest Bedroom',
+    location: 'Udupi, India',
+    year: 2024,
+    services: ['Interior Design', 'Space Optimization', 'Storage Solutions'],
+    description: 'A refined guest bedroom that perfectly balances warmth and sophistication. The design features premium materials, thoughtful space planning, and integrated storage solutions that maintain a clutter-free environment. Carefully curated lighting and textures create an inviting retreat for guests, while the neutral palette with rich wood accents adds timeless elegance.',
+    hero: {
+      url: '/bedroom4.jpg',
+      alt: 'Elegant guest bedroom view',
+      blurDataUrl: ''
+    },
+    category: 'bedroom'
+  },
+  {
+    slug: 'minimalist-bedroom-3',
+    title: 'Elegant Guest Bedroom',
+    location: 'Udupi, India',
+    year: 2024,
+    services: ['Interior Design', 'Space Optimization', 'Storage Solutions'],
+    description: 'A refined guest bedroom that perfectly balances warmth and sophistication. The design features premium materials, thoughtful space planning, and integrated storage solutions that maintain a clutter-free environment. Carefully curated lighting and textures create an inviting retreat for guests, while the neutral palette with rich wood accents adds timeless elegance.',
+    hero: {
+      url: '/bedroom5.jpg',
+      alt: 'Elegant guest bedroom view',
+      blurDataUrl: ''
+    },
+    category: 'bedroom'
+  },
+  {
+    slug: 'minimalist-bedroom-4',
+    title: 'Elegant Guest Bedroom',
+    location: 'Udupi, India',
+    year: 2024,
+    services: ['Interior Design', 'Space Optimization', 'Storage Solutions'],
+    description: 'A refined guest bedroom that perfectly balances warmth and sophistication. The design features premium materials, thoughtful space planning, and integrated storage solutions that maintain a clutter-free environment. Carefully curated lighting and textures create an inviting retreat for guests, while the neutral palette with rich wood accents adds timeless elegance.',
+    hero: {
+      url: '/bedroom6.jpg',
       alt: 'Elegant guest bedroom view',
       blurDataUrl: ''
     },
