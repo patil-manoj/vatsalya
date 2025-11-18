@@ -12,6 +12,8 @@ export default function Contact() {
     phone: '',
     email: '',
     projectType: '',
+    residenceType: '',
+    address: '',
     message: ''
   });
 
@@ -26,7 +28,7 @@ export default function Contact() {
     e.preventDefault();
     
     // Create WhatsApp message
-    const message = `*New Inquiry from Website*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Project Type:* ${formData.projectType}%0A*Message:* ${formData.message}`;
+    const message = `*New Inquiry from Website*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Project Type:* ${formData.projectType}%0A*Residence Type:* ${formData.residenceType}${formData.address ? `%0A*Address:* ${formData.address}` : ''}%0A*Message:* ${formData.message}`;
     
     // Redirect to WhatsApp
     window.open(`https://wa.me/917411334243?text=${message}`, '_blank');
@@ -436,6 +438,42 @@ export default function Contact() {
                     <option value="Consultation">Consultation</option>
                     <option value="Other">Other</option>
                   </select>
+                </div>
+
+                <div>
+                  <label htmlFor="residenceType" className="block text-sm text-brand-stone-700 mb-2 tracking-wide">
+                    Residence Type *
+                  </label>
+                  <select
+                    id="residenceType"
+                    name="residenceType"
+                    required
+                    value={formData.residenceType}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-brand-stone-300 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all bg-white rounded-sm"
+                  >
+                    <option value="">Select residence type</option>
+                    <option value="1BHK">1BHK</option>
+                    <option value="2BHK">2BHK</option>
+                    <option value="3BHK">3BHK</option>
+                    <option value="4BHK">4BHK</option>
+                    <option value="Villa">Villa</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="address" className="block text-sm text-brand-stone-700 mb-2 tracking-wide">
+                    Address (Optional)
+                  </label>
+                  <textarea
+                    id="address"
+                    name="address"
+                    value={formData.address}
+                    onChange={handleInputChange}
+                    rows={2}
+                    className="w-full px-4 py-3 border border-brand-stone-300 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all resize-none rounded-sm"
+                    placeholder="Your project address..."
+                  />
                 </div>
 
                 <div>
