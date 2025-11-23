@@ -101,7 +101,7 @@ export default function Contact() {
         <section className="relative min-h-[70vh] flex items-center">
           <div className="absolute inset-0">
             <LazyImage
-              src="https://images.unsplash.com/photo-1633360821222-7e8df83639fb"
+              src="https://images.unsplash.com/photo-1633360821222-7e8df83639fb?w=1920&q=75&fm=webp&fit=crop"
               alt="Contact Vatsalya Interior Design"
               className="w-full h-full object-cover"
               aspectRatio="aspect-[16/9]"

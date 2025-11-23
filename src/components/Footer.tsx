@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo and description */}
           <div className="md:col-span-2">
             <Link to="/" className="inline-block" aria-label="Vatsalya - Home">
-              <img src="/logo.png" alt="Vatsalya Logo" className="h-12 w-12" />
+              <img src="/logo-optimized.webp" alt="Vatsalya Logo" className="h-12 w-12" width="60" height="60" loading="lazy" decoding="async" />
             </Link>
             <p className="font-body text-brand-stone-300 mt-6 max-w-md">
               Crafting timeless spaces that blend luxury with functionality. 

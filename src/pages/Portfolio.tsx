@@ -32,10 +32,12 @@ export default function Portfolio() {
         <section className="relative min-h-[80vh] flex items-center justify-center">
           <div className="absolute inset-0">
             <LazyImage
-              src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc"
+              src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?w=1920&q=75&fm=webp&fit=crop"
               alt="Luxury interior design portfolio"
               className="w-full h-full object-cover"
               aspectRatio="aspect-[16/9]"
+              width={1920}
+              height={1080}
             />
             <div className="absolute inset-0 bg-black/50" />
           </div>

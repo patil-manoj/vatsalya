@@ -10,25 +10,25 @@ const SERVICES = [
   {
     title: 'Design Consultation',
     description: 'Begin your design journey with our expert consultation service. We delve deep into your vision, analyze your spaces potential, and develop a strategic direction that aligns with your lifestyle and aspirations.',
-    image: 'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e',
+    image: 'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=800&q=75&fm=webp&fit=crop',
     phases: ['Discovery', 'Analysis', 'Vision'],
   },
   {
     title: 'Spatial Planning',
     description: 'Transform your space with our innovative planning solutions. We craft harmonious layouts that maximize functionality while creating stunning visual narratives through thoughtful space utilization and flow optimization.',
-    image: 'https://images.unsplash.com/photo-1486304873000-235643847519',
+    image: 'https://images.unsplash.com/photo-1486304873000-235643847519?w=800&q=75&fm=webp&fit=crop',
     phases: ['Layout', 'Flow', 'Optimization'],
   },
   {
     title: 'Full-Service Design',
     description: 'Experience the pinnacle of design service with our comprehensive solution. From initial concept to final styling, we orchestrate every detail to create spaces that are both visually striking and perfectly functional.',
-    image: 'https://images.unsplash.com/photo-1618219740975-d40978bb7378',
+    image: 'https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=800&q=75&fm=webp&fit=crop',
     phases: ['Design', 'Documentation', 'Delivery'],
   },
   {
     title: 'FF&E Specification',
     description: 'Elevate your space with meticulously curated furniture, fixtures, and equipment. We source exclusive pieces that complement your design while ensuring durability, functionality, and aesthetic excellence.',
-    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221',
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=75&fm=webp&fit=crop',
     phases: ['Selection', 'Sourcing', 'Installation'],
   },
 ];
@@ -84,7 +84,7 @@ export default function Services() {
         <section className="relative min-h-[90vh] flex items-center">
           <div className="absolute inset-0">
             <LazyImage
-              src="https://images.unsplash.com/photo-1617806118233-18e1de247200"
+              src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=1920&q=75&fm=webp&fit=crop"
               alt="Luxury interior design services"
               className="w-full h-full object-cover"
               aspectRatio="aspect-[16/9]"
@@ -278,17 +278,17 @@ export default function Services() {
                   {
                     phase: 'Discovery',
                     description: 'Understanding your vision, requirements, and aspirations through detailed consultation.',
-                    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb3',
+                    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb3?w=600&q=75&fm=webp&fit=crop',
                   },
                   {
                     phase: 'Design Development',
                     description: 'Translating ideas into comprehensive design solutions with detailed specifications.',
-                    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c',
+                    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=75&fm=webp&fit=crop',
                   },
                   {
                     phase: 'Implementation',
                     description: 'Bringing designs to life with master craftsmen and quality materials.',
-                    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d',
+                    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=75&fm=webp&fit=crop',
                   },
                 ].map((step, index) => (
                   <motion.div

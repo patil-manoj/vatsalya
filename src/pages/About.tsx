@@ -62,7 +62,7 @@ export default function About() {
         <section className="relative h-screen">
           <div className="absolute inset-0">
             <LazyImage
-              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=75&fm=webp&fit=crop"
               alt="Luxury interior design"
               className="w-full h-full object-cover"
               aspectRatio="aspect-[16/9]"

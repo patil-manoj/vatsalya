@@ -17,11 +17,17 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-screen">
           <div className="absolute inset-0">
-            <LazyImage
-              src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc"
+            <img
+              src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?w=1920&q=75&fm=webp&fit=crop"
+              srcSet="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?w=640&q=75&fm=webp 640w, https://images.unsplash.com/photo-1632829882891-5047ccc421bc?w=1024&q=75&fm=webp 1024w, https://images.unsplash.com/photo-1632829882891-5047ccc421bc?w=1920&q=75&fm=webp 1920w"
+              sizes="100vw"
               alt="Luxury interior design"
               className="w-full h-full object-cover"
-              aspectRatio="aspect-[16/9]"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              width="1920"
+              height="1080"
             />
             <div className="absolute inset-0 bg-black/40" />
           </div>
@@ -96,17 +102,17 @@ export default function Home() {
                 {
                   title: 'Bespoke Design',
                   description: 'Every project is unique, tailored to reflect your individual style and needs. Our design process begins with understanding your vision and lifestyle.',
-                  image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea'
+                  image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=75&fm=webp&fit=crop'
                 },
                 {
                   title: 'Artisan Craftsmanship',
                   description: 'We partner with master artisans and craftspeople who bring decades of expertise to create bespoke furnishings and details.',
-                  image: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe'
+                  image: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&q=75&fm=webp&fit=crop'
                 },
                 {
                   title: 'Sustainable Luxury',
                   description: 'Our designs embrace sustainable practices and materials without compromising on luxury and elegance. We integrate eco-friendly solutions with timeless sophistication.',
-                  image: 'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c'
+                  image: 'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=800&q=75&fm=webp&fit=crop'
                 }
               ].map((item, index) => (
                 <motion.div
@@ -189,10 +195,12 @@ export default function Home() {
                 <div className="relative">
                   <div className="absolute -inset-4 border border-brand-primary/20" />
                   <LazyImage
-                    src="https://images.unsplash.com/photo-1737233433647-b53b339306f4"
+                    src="https://images.unsplash.com/photo-1737233433647-b53b339306f4?w=1200&q=75&fm=webp&fit=crop"
                     alt="Luxury wardrobe interior"
                     className="w-full"
                     aspectRatio="aspect-[4/3]"
+                    width={1200}
+                    height={900}
                   />
                 </div>
               </motion.div>
@@ -326,10 +334,12 @@ export default function Home() {
         <section className="relative py-32">
           <div className="absolute inset-0">
             <LazyImage
-              src="https://images.unsplash.com/photo-1616048056617-93b94a339009"
+              src="https://images.unsplash.com/photo-1616048056617-93b94a339009?w=1920&q=75&fm=webp&fit=crop"
               alt="Luxury furniture showcase"
               className="w-full h-full object-cover"
               aspectRatio="aspect-[21/9]"
+              width={1920}
+              height={823}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/40" />
           </div>
