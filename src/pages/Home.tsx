@@ -26,8 +26,8 @@ export default function Home() {
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              width="1920"
-              height="1080"
+              width={1920}
+              height={1080}
             />
             <div className="absolute inset-0 bg-black/40" />
           </div>
