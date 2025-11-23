@@ -32,7 +32,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/logo2-optimized.webp" alt="Vatsalya Logo" className="h-12" width="298" height="60" loading="eager" decoding="async" />
+            <img src="/logo2-optimized.webp" alt="Vatsalya Logo" className="h-12" width="260" height="60" loading="eager" decoding="async" />
             {/* <span className="font-display text-xl tracking-wide">VATSALYA</span> */}
           </Link>
 
