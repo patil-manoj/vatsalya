@@ -4,6 +4,7 @@ import LazyImage from '../components/LazyImage';
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
 import SEO from '../components/SEO';
 import ContactStrip from '../components/ContactStrip';
+import { Link } from 'react-router-dom';
 
 const VALUES = [
   {
@@ -477,6 +478,52 @@ export default function About() {
                   <span>Personalized service and ongoing support</span>
                 </li>
               </ul>
+
+              <div className="mt-12 grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+                <div>
+                  <span className="text-xs tracking-[0.3em] text-brand-primary/80 block mb-3">CERTIFICATION</span>
+                  <h3 className="font-heading text-2xl md:text-3xl font-light mb-4">ISO 9001:2015 Quality Management System</h3>
+                  <p className="text-base md:text-lg leading-relaxed opacity-90">
+                    Vatsalya Home Interiors has been independently assessed by QRO and certified for the design,
+                    development, manufacturing, supply, and installation of customized interior solutions across
+                    residential, commercial, and retail spaces.
+                  </p>
+                  <dl className="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-white/85">
+                    <div>
+                      <dt className="uppercase tracking-[0.2em] text-[11px] text-white/60">Certified On</dt>
+                      <dd className="mt-1">5 May 2026</dd>
+                    </div>
+                    <div>
+                      <dt className="uppercase tracking-[0.2em] text-[11px] text-white/60">Certificate Number</dt>
+                      <dd className="mt-1">305026050513Q</dd>
+                    </div>
+                    <div>
+                      <dt className="uppercase tracking-[0.2em] text-[11px] text-white/60">Surveillance Audit</dt>
+                      <dd className="mt-1">4 May 2027, 4 May 2028</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                  <div className="rounded-2xl border border-white/15 bg-white/5 p-4 backdrop-blur">
+                    <img
+                      src="/certificate.jpg"
+                      alt="ISO 9001:2015 certificate for Vatsalya Home Interiors"
+                      className="w-full h-auto rounded-xl bg-white object-contain"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs uppercase tracking-[0.2em] text-white/70">
+                      <span>ISO 9001:2015 Certificate</span>
+                      <Link
+                        to="/certificate"
+                        className="inline-flex items-center gap-2 text-white hover:text-brand-primary transition-colors"
+                      >
+                        View Certificate Page
+                        <span aria-hidden="true">&#8594;</span>
+                      </Link>
+                    </div>
+                  </div>
+              </div>
             </motion.div>
           </div>
         </section>

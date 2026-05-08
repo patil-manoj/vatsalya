@@ -57,6 +57,12 @@ export default function Navigation() {
               ABOUT
             </Link>
             <Link
+              to="/certificate"
+              className="font-body text-sm tracking-widest hover:text-brand-primary transition-colors"
+            >
+              CERTIFICATE
+            </Link>
+            <Link
               to="/contact"
               className="font-body text-sm tracking-widest bg-brand-secondary text-white px-6 py-3 hover:bg-brand-primary transition-colors"
             >
@@ -106,6 +112,12 @@ export default function Navigation() {
                 className="block font-body text-sm tracking-widest hover:text-brand-primary transition-colors"
               >
                 ABOUT
+              </Link>
+              <Link
+                to="/certificate"
+                className="block font-body text-sm tracking-widest hover:text-brand-primary transition-colors"
+              >
+                CERTIFICATE
               </Link>
               <Link
                 to="/contact"

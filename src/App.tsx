@@ -14,6 +14,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Services = lazy(() => import('./pages/Services'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const Certificate = lazy(() => import('./pages/Certificate'));
 
 export default function App() {
   return (
@@ -70,6 +71,14 @@ export default function App() {
               element={
                 <Suspense fallback={<div>Loading...</div>}>
                   <Terms />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/certificate"
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Certificate />
                 </Suspense>
               }
             />
